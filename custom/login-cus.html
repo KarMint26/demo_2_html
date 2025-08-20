@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HALLONET - Login</title>
+
+    <meta name="author" content="mm1rza" />
+    <meta name="theme-color" content="#FA9C1B" />
+    <link rel="shortcut icon" href="../img/fav.png" />
+    <link rel="icon" href="../img/fav.png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="../img/fav.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="custom.css" />
+  </head>
+  <body>
+    <div class="background-animation">
+      <div class="particles"></div>
+      <div class="particles-2"></div>
+      <div class="particles-3"></div>
+    </div>
+
+    <div class="login-container">
+      <div class="login-card">
+        <img src="../img/emblemheader.png" class="logo" alt="Logo HALLONET" />
+
+        <div class="content-wrapper">
+          <a href="#" class="trial-link">
+            <button class="btn btn-trial">✨ Coba Akses Internet Gratis</button>
+          </a>
+          <div class="mode-selector">
+            <button id="voucher-btn" class="mode-btn">Voucher</button>
+            <button id="member-btn" class="mode-btn">Member</button>
+          </div>
+          <form id="login-form" autocomplete="off">
+            <div class="input-group">
+              <input
+                id="username-input"
+                class="input-field"
+                name="username"
+                type="text"
+                required
+              />
+            </div>
+            <div id="password-group" class="input-group">
+              <input
+                id="password-input"
+                class="input-field"
+                name="password"
+                type="password"
+              />
+            </div>
+            <button id="login-button" class="btn btn-login" type="submit">
+              Login
+            </button>
+          </form>
+        </div>
+
+        <div class="ad-slider">
+          <div class="ad-slide-item">
+            <img src="../img/iklan/1.jpg" alt="Iklan 1" />
+          </div>
+          <div class="ad-slide-item">
+            <img src="../img/iklan/2.jpg" alt="Iklan 2" />
+          </div>
+          <div class="ad-slide-item">
+            <img src="../img/iklan/1.jpg" alt="Iklan 3" />
+          </div>
+          <div class="ad-slide-item">
+            <img src="../img/iklan/2.jpg" alt="Iklan 4" />
+          </div>
+          <div class="slider-dots"></div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <a href="#">
+          <img src="../img/footer.png" class="footer-logo" alt="Logo Footer" />
+        </a>
+      </footer>
+    </div>
+
+    <script src="custom.js"></script>
+  </body>
+</html>

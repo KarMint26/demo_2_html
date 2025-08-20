@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HALLONET - Logout Berhasil</title>
+
+    <meta name="author" content="mm1rza" />
+    <meta name="theme-color" content="#FA9C1B" />
+    <link rel="shortcut icon" href="../img/fav.png" />
+    <link rel="icon" href="../img/fav.png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="../img/fav.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="custom.css" />
+  </head>
+  <body>
+    <div class="background-animation">
+      <div class="particles"></div>
+      <div class="particles-2"></div>
+      <div class="particles-3"></div>
+    </div>
+
+    <div class="login-container">
+      <div class="login-card animated-card">
+        <div class="content-wrapper status-content">
+          <div class="status-header">
+            <div style="text-align: start !important">
+              <h2 class="status-username">LOGOUT</h2>
+              <p
+                class="status-greeting"
+                style="font-size: 0.8rem; margin-top: 0.5rem"
+              >
+                Terima kasih telah menggunakan layanan kami.
+              </p>
+            </div>
+            <span class="status-indicator disconnected">Terputus</span>
+          </div>
+
+          <div class="final-stats-summary">
+            <h3 class="summary-title">Ringkasan Sesi Terakhir</h3>
+            <div class="stats-list">
+              <div class="stat-item-row">
+                <span class="stat-label">Download</span>
+                <span class="stat-value">543.2 MB</span>
+              </div>
+              <div class="stat-item-row">
+                <span class="stat-label">Upload</span>
+                <span class="stat-value">87.1 MB</span>
+              </div>
+              <div class="stat-item-row">
+                <span class="stat-label">Durasi Terkoneksi</span>
+                <span class="stat-value">45m 12d</span>
+              </div>
+            </div>
+          </div>
+
+          <form action="login-cus.html">
+            <button class="btn btn-login" type="submit">Login Kembali</button>
+          </form>
+
+          <p class="redirect-info">
+            Mengarahkan kembali dalam <span id="countdown">10</span> detik...
+          </p>
+        </div>
+      </div>
+
+      <footer class="footer-text">
+        <a href="#">
+          <img src="../img/footer.png" class="footer-logo" alt="Logo Footer" />
+        </a>
+      </footer>
+    </div>
+
+    <script>
+      let timeLeft = 10;
+      const countdownElement = document.getElementById("countdown");
+      const timer = setInterval(() => {
+        timeLeft--;
+        if (countdownElement) {
+          countdownElement.textContent = timeLeft;
+        }
+        if (timeLeft <= 0) {
+          clearInterval(timer);
+          window.location.href = "login.html";
+        }
+      }, 1000);
+    </script>
+    <script src="custom.js"></script>
+  </body>
+</html>
