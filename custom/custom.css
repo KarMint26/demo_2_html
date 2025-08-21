@@ -734,3 +734,67 @@ input[name="password"] {
   font-size: 15px;
   color: #333;
 }
+
+/* --- Style Halaman Error (error.html) --- */
+
+.error-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 50px 40px;
+}
+
+.error-animation {
+  margin-bottom: 25px;
+}
+
+.error-icon {
+  width: 90px;
+  height: 90px;
+  border: 4px solid #f44336;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: scale-up-fade-in 0.5s ease-out;
+}
+
+.error-icon span {
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  color: #f44336;
+}
+
+.error-title {
+  color: #333;
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.error-message {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.6;
+  max-width: 40ch;
+  margin-bottom: 20px;
+}
+
+.error-details {
+  width: 100%;
+  background-color: #ffebee;
+  border-radius: 10px;
+  border: 1px solid #ffcdd2;
+  padding: 12px;
+  margin-bottom: 25px;
+}
+
+.error-details p {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+  color: #c62828;
+  margin: 0;
+}
